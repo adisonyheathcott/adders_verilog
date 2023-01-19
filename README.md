@@ -2,7 +2,7 @@
 
 This project was created to practice using Tcl scripts to generate Vivado projects and to better understand timing analysis.
 
-.
+```
 ├── tcl
 │   └── Tcl Script Files
 ├── hdl
@@ -13,6 +13,7 @@ This project was created to practice using Tcl scripts to generate Vivado projec
 │   └── Constraint Files (Arty A7-35T)
 ├── .gitignore
 └── README.md
+```
 
 ### How to compile
 
