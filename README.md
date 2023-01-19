@@ -4,10 +4,13 @@ This project was created to practice using Tcl scripts to generate Vivado projec
 
 .
 ├── tcl
-│   └── fulladder.tcl
+│   └── Tcl Script Files
 ├── hdl
-│   ├── 
-│   └── fulladder.v
+│   └── Verilog Source Files
+├── tb
+│   └── Verilog Testbench Files
+├── constraints
+│   └── Constraint Files (Arty A7-35T)
 ├── .gitignore
 └── README.md
 
@@ -23,9 +26,26 @@ Add the inputs and outputs to the waveform, simulate for the needed time.
 
 ## Full Adder
 
-A simple full adder.
+A single bit full adder.
 
 - Tcl Script
     - tcl/fulladder.tcl
+    - tcl/fulladder_tb.tcl
 - Sources
     - hdl/fulladder.v
+- Simulation
+    - tb/fulladder_tb.v
+- Constraints
+    - constraints/fulladder.xdc
+
+## Ripple Carry Adder
+
+An 8-bit ripple carry adder
+
+- Tcl Script
+    - tcl/rcadder.tcl
+    - tcl/rcadder_tb.tcl
+- Sources
+    - tcl/rcadder.v
+- Simulation
+    - tb/rcadder_tb.v
