@@ -5,8 +5,8 @@ module rcadder_tb;
 reg [7:0] a;
 reg [7:0] b;
 
-reg [7:0] i = 8'b00000000;
-reg [7:0] j = 8'b00000000;
+reg [8:0] i = 9'b000000000;
+reg [8:0] j = 9'b000000000;
 
 wire [7:0] sum;
 wire cout;
@@ -24,9 +24,9 @@ initial begin
 
     #20
 
-    for (i = 0; i < 255; i = i + 1'b1) begin
+    for (i = 0; i < 256; i = i + 1'b1) begin
         a = i;
-        for (j = 0; j < 255; j = j + 1'b1) begin
+        for (j = 0; j < 256; j = j + 1'b1) begin
             b = j;
             #20
             if (sum != a + b) $display("FAILED");

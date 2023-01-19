@@ -49,3 +49,15 @@ An 8-bit ripple carry adder
     - tcl/rcadder.v
 - Simulation
     - tb/rcadder_tb.v
+
+## Carry Lookahead Adder
+
+A 4-bit carry lookahead adder
+
+- Tcl Script
+    - tcl/cladder.tcl
+    - tcl/cladder_tb.tcl
+- Sources
+    - tcl/cladder.v
+- Simulation
+    - tb/cladder_tb.v

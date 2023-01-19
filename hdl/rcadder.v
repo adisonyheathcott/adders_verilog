@@ -9,13 +9,13 @@ module rcadder(
 
 wire [6:0] c;
 
-fulladder u1(a[0], b[0], 1'b0, sum[0], c[0]);
-fulladder u2(a[1], b[1], c[0], sum[1], c[1]);
-fulladder u3(a[2], b[2], c[1], sum[2], c[2]);
-fulladder u4(a[3], b[3], c[2], sum[3], c[3]);
-fulladder u5(a[4], b[4], c[3], sum[4], c[4]);
-fulladder u6(a[5], b[5], c[4], sum[5], c[5]);
-fulladder u7(a[6], b[6], c[5], sum[6], c[6]);
-fulladder u8(a[7], b[7], c[6], sum[7], cout);
+fulladder u1(.a(a[0]), .b(b[0]), .cin(1'b0), .sum(sum[0]), .cout(c[0]));
+fulladder u2(.a(a[1]), .b(b[1]), .cin(c[0]), .sum(sum[1]), .cout(c[1]));
+fulladder u3(.a(a[2]), .b(b[2]), .cin(c[1]), .sum(sum[2]), .cout(c[2]));
+fulladder u4(.a(a[3]), .b(b[3]), .cin(c[2]), .sum(sum[3]), .cout(c[3]));
+fulladder u5(.a(a[4]), .b(b[4]), .cin(c[3]), .sum(sum[4]), .cout(c[4]));
+fulladder u6(.a(a[5]), .b(b[5]), .cin(c[4]), .sum(sum[5]), .cout(c[5]));
+fulladder u7(.a(a[6]), .b(b[6]), .cin(c[5]), .sum(sum[6]), .cout(c[6]));
+fulladder u8(.a(a[7]), .b(b[7]), .cin(c[6]), .sum(sum[7]), .cout(cout));
 
 endmodule
